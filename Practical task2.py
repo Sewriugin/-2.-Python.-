@@ -51,25 +51,6 @@ for i in range(len(indexN)):
     multiplicationN = multiplicationN * indexN[i]
 print(f'Произведение элементов {multiplicationN}')
 
-# ------------------------------------------
-# РЕШЕНИЕ БЫЛО ДАНО ПРИ РАЗБОРЕ НА СЕМИНАРЕ
-# multiplicationIndex(4)
-
-# def listNumbers(numbers):
-#     count = 0 
-#     for i in numbers:
-#         count +=1
-#         return count
-#     print(numbers)
-
-
-    # for i in range(len(numbers)):
-    #     numberIndex = int(input('Введите индекс:'))
-    #     if numbers[numberIndex]:
-    #        multiplication = numbers[numberIndex] * i
-    # print(multiplication)
-#     print('\n')
-# ------------------------------------------
 
 # Задача 3. Минимальный делитель
 '''
@@ -94,30 +75,7 @@ for i in range(1, int(n)):
     division += 1
 print("{:5d}|".format(round(n)))
 
-# ------------------------------------------
-# РЕШЕНИЕ БЫЛО ДАНО ПРИ РАЗБОРЕ НА СЕМИНАРЕ
-# n = int(input())
-# flag = True
-# i = 2
-# while flag:
-#     if n % i == 0:
-#         print(i)
-#         flag = False
-#     i += 1
-    
-# n = int(input())
-# flag = True
-# i = 2
-# while flag: # == True
-#     time.sleep(1)
-#     if n % i == 0:
-#         print(i)
-#         flag = False
-#     i += 1
-# ------------------------------------------
 
-
-# Задача 4
 # Требуется посчитать сумму чётных чисел, расположенных между числами 1 и N включительно.
 print('Задача 4')
 def sumNumbers(number):
@@ -135,7 +93,7 @@ sumNumbers(5)
 
 
 '''
-                    ДОПОЛНИТЕЛЬНАЯ ЗАДАЧА
+#  ДОПОЛНИТЕЛЬНАЯ ЗАДАЧА => МОНЕТКИ
 На столе лежат n монеток. Некоторые из них лежат вверх решкой, а некоторые – гербом.
 Определите минимальное число монеток, которые нужно перевернуть, чтобы все монетки были повернуты вверх одной и той же стороной.
 Монетки
@@ -170,62 +128,8 @@ else:
     count = countN - tails
 print('Минимальное количество монет, которые нужно перевернуть:', count)
 
-# ------------------------------------------
-# РЕШЕНИЕ БЫЛО ДАНО ПРИ РАЗБОРЕ НА СЕМИНАРЕ
-# n = int(input())
-# gerb = 0
-# orel = 0
-# for i in range(n):
-#     k = int(input())
-#     if k == 0:
-#         gerb += 1
-#     else:
-#         orel += 1
-# print(min(gerb, orel))
-# ====================
-# n = int(input())
-# gerb = 0
-# orel = 0
-# for i in range(n):
-#     k = int(input())
-#     if k == 0:
-#         gerb += 1
-#     else:
-#         orel += 1
 
-# if gerb < orel:
-#     print(gerb)
-# else:
-#     print(orel)
-# ------------------------------------------
-
-#                     ДОПОЛНИТЕЛЬНАЯ ЗАДАЧА
-'''
-Требуется посчитать сумму целых чисел, расположенных между числами 1 и N включительно.
-    Входные данные: записано единственное целое число N, не превышающее по абсолютной величине 104.
-    Выходные данные: нужно вывести одно целое число — сумму чисел, расположенных между 1 и N включительно.
-Пример
-№	INPUT.TXT	OUTPUT.TXT
-1	    5	        15
-'''
-n = int(input())
-summa = 0
-i = 1
-while i <= n:
-    summa = summa + i
-    i += 1
-print(summa)
-
-# ------------------------------------------
-# РЕШЕНИЕ БЫЛО ДАНО ПРИ РАЗБОРЕ НА СЕМИНАРЕ
-# n = int(input())
-# print(sum([i for i in range(n + 1)]))
-
-# n = int(input())
-# print(((n +1) / 2) * n)
-# ------------------------------------------
-
-#  ДОПОЛНИТЕЛЬНАЯ ЗАДАЧА => Шеренга
+#  ДОПОЛНИТЕЛЬНАЯ ЗАДАЧА => ШЕРЕНГА
 '''
 Петя впервые пришел на урок физкультуры в новой школе. Перед началом урока ученики выстраиваются по росту, 
 в порядке невозрастания.
@@ -251,67 +155,3 @@ for i in range(len(heightStudents)):
     if heightStudents[i] <= countN and heightStudents[placeLine] >= countN:
         placeLine = i + 1
 print(placeLine)
-
-
-# n = int(input('введите целое число (1 < N ≤ 106) N:'))
-# division = 2
-# while n % division != 0:
-#     division += 1
-# print(division)
-
-
-# a = [int(i) for i in input().split()]
-# x = int(input())
-# pos = 0
-# while pos < len(a) and a[pos] >= x:
-#     pos += 1
-# print(pos + 1)
-
-
-# n = int(input())
-# arr_rost = list()
-# for i in range(n):
-#     rost = int(input())
-#     arr_rost.append(rost)
-
-# my_rost = int(input())
-
-# j = 1
-# for i in arr_rost:
-#     if my_rost <= 1:
-#         j += 1
-# print(j)
-
-
-# Сбор черники
-# n = int(input())
-# arr = list()
-# for i in range(n):
-#     # k = int(input())
-#     arr.append(int(input()))
-    
-    
-# [1, 2, 3, 4]
-# -4 -3 -2 -1
-# arr_count = list()
-# for i in range(1, len(arr) -1):
-#     arr_count.append(arr[i - 1] + arr[i] + arr[i + 1])
-
-# arr_count.append(arr[0] + arr[1] + arr[-1])
-# arr_count.append(arr[-2] + arr[-1] + arr[0])
-# print(max(arr_count))
-
-# n = int(input())
-# arr = list()
-# for i in range(n):
-    ## k = int(input())
-    # arr.append(int(input()))
-
-# [1, 2, 3, 4]
-# -4 -3 -2 -1 
-# maximum = 0
-# arr_count = list()
-# for i in range(len(arr) - 1):
-#     arr_count.append(arr[i - 1] + arr[i] + arr[i + 1])
-# arr_count.append(arr[-2] + arr[-1] + arr[0])
-# print(max(arr_count))
